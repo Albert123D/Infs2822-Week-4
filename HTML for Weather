@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Weather App by Albert and Kevin
+    </title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="logic.js"></script>
+</head>
+
+<body onload="bodyDidLoad()">
+    <h1>Weather Observations App</h1>
+    <label for="input_newEntry"> Information to add :</label>
+    <input type="text" id="input_newEntry" name="input_newEntry" placeholder="Date" />
+    <input type="text" id="input_newEntry2" name="input_newEntry2" placeholder="Min. Temp." />
+    <input type="text" id="input_newEntry3" name="input_newEntry3" placeholder="Max. Temp" />
+    <input type="text" id="input_newEntry4" name="input_newEntry4" placeholder="Conditions" />
+
+    <button onclick="userDidClickCreate()"> Add Entry </button>  
+
+    <hr> 
+
+    <h2>Download the Data</h2>
+
+    <button onclick="downloadJSON()"> Download </button>  
+
+    <hr>
+
+    <h2>Upload a File</h2>
+
+    <input id= "fileUploader" type="file"/>
+
+    <hr>
+    <table id="tasksTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Min. Temp.</th>
+                <th>Max Temp.</th>
+                <th>Conditions</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyForTasks">
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
